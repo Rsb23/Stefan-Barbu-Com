@@ -1,3 +1,24 @@
-theme: jekyll-theme-minimal
-title: Home | Stefan Barbu
-description: Learn About Stefan Barbu! | Explore Projects | Discover Frameworks | Deploy
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
